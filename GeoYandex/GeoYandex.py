@@ -4,7 +4,7 @@ import sys
 import requests
 from bs4 import BeautifulSoup
 import openpyxl
-import os
+from os.path import join, abspath
 import time
 
 
@@ -62,10 +62,11 @@ def site_parse(req_region, i):
 
 
 def main():
-    path = os.path.dirname(__file__) + '\\AddressFile.xlsx'
+    xlsx_file = join('.', 'AddressFile.xlsx')
+    xlsx_file = abspath(xlsx_file)
     start_time = time.time()
     try:
-        wb = openpyxl.load_workbook(filename=path, read_only=False, data_only=True)
+        wb = openpyxl.load_workbook(filename=xlsx_file, read_only=False, data_only=True)
         sh = wb.active
         start_row = 2
         end_row = 2
@@ -80,7 +81,7 @@ def main():
             return False
         else:
             try:
-                wb.save(path)
+                wb.save(xlsx_file)
             except PermissionError:
                 print(print_description_text.__doc__)
                 print("Файл закрыт для записи")
@@ -105,7 +106,7 @@ def main():
             except Exception:
                 pass
 
-        wb.save(path)
+        wb.save(xlsx_file)
         print()
         print(print_version_text.__doc__)
         print("Все адреса обработаны. Результат в файле AddressFile.xlsx")
