@@ -4,7 +4,7 @@ import sys
 import requests
 from bs4 import BeautifulSoup
 import openpyxl
-from os.path import join, abspath
+import os
 import time
 
 
@@ -17,7 +17,7 @@ def print_message(msg):
 def print_description_text():
     '''
         ==========================================================================
-        GeoPosition from Yandex.maps ver. 1.0.7'
+        GeoPosition from Yandex.maps ver. 1.0.7
 
         Программа позволяет получить Широту и Долготу с Яндекс.Карты по Адресу.
         Программа работает с файлом «AddressFile.xlsx».
@@ -35,7 +35,7 @@ def print_description_text():
 def print_version_text():
     '''
         ========================================
-        GeoPosition from Yandex.maps ver. 1.0.7'
+        GeoPosition from Yandex.maps ver. 1.0.7
         tha7n7@gmail.com freeware ©2021
         ========================================
     '''
@@ -68,8 +68,7 @@ def site_parse(req_region, i):
 
 
 def main():
-    path = join('../../GeoCoordinates', 'AddressFile.xlsx')
-    path = abspath(path)
+    path = os.path.dirname(__file__) + '\\AddressFile.xlsx'
     start_time = time.time()
     try:
         wb = openpyxl.load_workbook(filename=path, read_only=False, data_only=True)
@@ -104,8 +103,8 @@ def main():
 
         for i in range(start_row, end_row):
             req_list.append([(str(sh.cell(row=i, column=1).value))])
-        i = 0
-        for i in range(len(req_list)):
+
+        for i in range(0, len(req_list)):
             add_url = req_list[i][0]
             text_answer = site_parse(add_url, i)
             if text_answer[0][2] != '.' or text_answer[1][2] != '.':
