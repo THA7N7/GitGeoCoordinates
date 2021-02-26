@@ -8,12 +8,6 @@ import os
 import time
 
 
-def print_message(msg):
-    '''Print message'''
-    print(msg)
-    print()
-
-
 def print_description_text():
     '''
         ==========================================================================
@@ -83,18 +77,14 @@ def main():
         if a + b + c != 'АдресШиротаДолгота':
             print(print_description_text.__doc__)
             print("Неверный формат файла")
-            print()
-            input("Press any key to continue...")
-            sys.exit()
+            return False
         else:
             try:
                 wb.save(path)
             except PermissionError:
                 print(print_description_text.__doc__)
                 print("Файл закрыт для записи")
-                print()
-                input("Press any key to continue...")
-                sys.exit()
+                return False
         v = a
         while v != None:
             v = sh.cell(row=r, column=1).value
@@ -121,18 +111,16 @@ def main():
         print("Все адреса обработаны. Результат в файле AddressFile.xlsx")
         elapsed_time = time.time() - start_time
         print('Elapsed time : {} sec'.format(round(elapsed_time, 2)))
-        print()
-        input("Press any key to continue...")
         wb.close()
-        sys.exit()
+        return True
     except FileNotFoundError:
         print(print_description_text.__doc__)
         print("AddressFile.xlsx не найден")
-        print()
-        input("Press any key to continue...")
-        quit()
+        return False
 
 
 if __name__ == '__main__':
     print()
     main()
+    print()
+    input("Press any key to continue...")

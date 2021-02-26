@@ -136,10 +136,9 @@ def main():
             sh.cell(row=1 + i, column=1).value = points_inside[i]
             wb_points_inside.save('InsidePolygon.xlsx')
         wb_points_inside.close()
-        print(print_version_text().__doc__)
     else:
         print("Точки внутри регионов не найдены")
-
+    print(print_version_text().__doc__)
     wb_points.close()
 
 
