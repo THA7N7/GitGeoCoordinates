@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>SPAR СПб Чкаловский АП ОПС.xlsx</name>
+    <Style id="icon-1659-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1659-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1659-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1659-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1659-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>ПО_197022</name>
+      <description><![CDATA[№: 1<br>Сеть: МРФ Северо-Запад<br>Адрес: Санкт-Петербург, г. Санкт-Петербург, пр. Каменноостровский, 42 А стр.б<br>Широта: 59.966246<br>Долгота: 30.307846<br>Количество экранов: 2]]></description>
+      <styleUrl>#icon-1659-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="№">
+          <value>1.0</value>
+        </Data>
+        <Data name="Сеть">
+          <value>МРФ Северо-Запад</value>
+        </Data>
+        <Data name="Адрес">
+          <value>Санкт-Петербург, г. Санкт-Петербург, пр. Каменноостровский, 42 А стр.б</value>
+        </Data>
+        <Data name="Широта">
+          <value>59.966246</value>
+        </Data>
+        <Data name="Долгота">
+          <value>30.307846</value>
+        </Data>
+        <Data name="Количество экранов">
+          <value>2.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          30.307846,59.966246,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ПО_197110</name>
+      <description><![CDATA[№: 2<br>Сеть: МРФ Северо-Запад<br>Адрес: Санкт-Петербург, г. Санкт-Петербург, ул Большая Зеленина, 11/1, литера А<br>Широта: 59.960507<br>Долгота: 30.294021<br>Количество экранов: 2]]></description>
+      <styleUrl>#icon-1659-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="№">
+          <value>2.0</value>
+        </Data>
+        <Data name="Сеть">
+          <value>МРФ Северо-Запад</value>
+        </Data>
+        <Data name="Адрес">
+          <value>Санкт-Петербург, г. Санкт-Петербург, ул Большая Зеленина, 11/1, литера А</value>
+        </Data>
+        <Data name="Широта">
+          <value>59.960507</value>
+        </Data>
+        <Data name="Долгота">
+          <value>30.294021</value>
+        </Data>
+        <Data name="Количество экранов">
+          <value>2.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          30.294021,59.960507,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ПО_197136</name>
+      <description><![CDATA[№: 3<br>Сеть: МРФ Северо-Запад<br>Адрес: Санкт-Петербург, г. Санкт-Петербург, ул. Полозова, 13/63, литера А<br>Широта: 59.963764<br>Долгота: 30.302887<br>Количество экранов: 2]]></description>
+      <styleUrl>#icon-1659-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="№">
+          <value>3.0</value>
+        </Data>
+        <Data name="Сеть">
+          <value>МРФ Северо-Запад</value>
+        </Data>
+        <Data name="Адрес">
+          <value>Санкт-Петербург, г. Санкт-Петербург, ул. Полозова, 13/63, литера А</value>
+        </Data>
+        <Data name="Широта">
+          <value>59.963764</value>
+        </Data>
+        <Data name="Долгота">
+          <value>30.302887</value>
+        </Data>
+        <Data name="Количество экранов">
+          <value>2.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          30.302887,59.963764,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ПО_197198</name>
+      <description><![CDATA[№: 4<br>Сеть: МРФ Северо-Запад<br>Адрес: Санкт-Петербург, г. Санкт-Петербург, Введенская ул., 10 А<br>Широта: 59.956331<br>Долгота: 30.304208<br>Количество экранов: 4]]></description>
+      <styleUrl>#icon-1659-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="№">
+          <value>4.0</value>
+        </Data>
+        <Data name="Сеть">
+          <value>МРФ Северо-Запад</value>
+        </Data>
+        <Data name="Адрес">
+          <value>Санкт-Петербург, г. Санкт-Петербург, Введенская ул., 10 А</value>
+        </Data>
+        <Data name="Широта">
+          <value>59.956331</value>
+        </Data>
+        <Data name="Долгота">
+          <value>30.304208</value>
+        </Data>
+        <Data name="Количество экранов">
+          <value>4.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          30.304208,59.956331,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
