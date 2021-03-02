@@ -86,7 +86,7 @@ def main():
                 print("Файл закрыт для записи")
                 return False
         v = a
-        while v != None:
+        while v is not None:
             v = sh.cell(row=r, column=1).value
             end_row = r
             r += 1

@@ -103,7 +103,7 @@ def main():
             return False
 
     v = a
-    while v != None:
+    while v is not None:
         v = sh.cell(row=r, column=1).value
         end_row = r
         r += 1
@@ -138,12 +138,12 @@ def main():
         wb_points_inside.close()
     else:
         print("Точки внутри регионов не найдены")
-    print(print_version_text().__doc__)
     wb_points.close()
 
 
 if __name__ == '__main__':
     print()
     main()
+    print(print_version_text().__doc__)
     print()
     input("Press any key to continue...")
