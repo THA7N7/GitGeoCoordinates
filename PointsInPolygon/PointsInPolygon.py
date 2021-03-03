@@ -144,6 +144,7 @@ def main():
 if __name__ == '__main__':
     print()
     main()
-    print(print_version_text().__doc__)
+    print()
+    print(print_version_text.__doc__)
     print()
     input("Press any key to continue...")
